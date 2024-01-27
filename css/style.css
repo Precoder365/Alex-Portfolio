@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
     --hue-1:257;
@@ -24,7 +24,7 @@
 
 body{
     overflow-x: hidden;
-    background-color: var(--bg-color);
+    background-color: #fff;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -150,4 +150,123 @@ nav.container{
 .toggle-btn:hover{
     filter: brightness(97%);
     color:var(--main-color-1);
+}
+
+/* HERO */
+
+.showcase-area{
+    padding:120px 0;
+    width:100%;
+    overflow: hidden;
+}
+
+.showcase-area .container{
+    display: grid;
+    grid-template-columns: 550px 1fr;
+    height:calc(100vh - 120px);
+    max-height: 2600px;
+    align-items: center;
+    margin-left:5rem;
+}
+
+.sub-heading{
+    color:var(--heading-color);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-left:3px solid var(--main-color-2);
+    padding: 0.13rem 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.heading{
+    color:var(--heading-color);
+    font-size:3rem;
+    line-height:1.3;
+    font-family: 'Kaushan Script', cursive;
+    font-weight:200;
+}
+
+.text{
+    color:var(--text-color);
+    font-size:0.9rem;
+    margin:2rem 0;
+}
+
+.showcase-area .sub-heading{
+    margin-bottom: 0.7rem;
+}
+
+.showcase-area .heading{
+    font-size: 3.5rem;
+}
+
+.showcase-area .text{
+    margin: 0.8rem 0;
+}
+
+.cta{
+    margin-top:3.5rem;
+    display:flex;
+    align-items:center;
+}
+
+.cta .btn{
+    margin-right:1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.9rem 1.75rem;
+    border-radius:17px;
+    background-color: var(--main-color-1);
+    color:#fff;
+    font-size:0.85rem;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: var(--main-color-dark-1);
+}
+
+.btn.secondary-btn{
+    position:relative;
+    background-color: transparent;
+    color: var(--main-color-1);
+    font-weight:500;
+    font-size:0.9rem;
+    letter-spacing: 0px;
+    border-bottom: 2.5px solid var(--main-color-2);
+    border-radius:0px;
+    padding: 0.15rem 0;
+}
+
+.btn.secondary-btn::before{
+    content:"";
+    position: absolute;
+    width:0;
+    height:2.5px;
+    border-radius:5px;
+    background-color: var(--main-color-1);
+    bottom:-2.5px;
+    left:0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.btn.secondary-btn:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+
+.showcase-image{
+    width:100%;
+    border-radius:0 0 80px 80px;
+}
+
+.showcase-image img{
+    width:90%;
 }
