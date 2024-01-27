@@ -295,3 +295,29 @@ nav.container{
 .about .text{
     margin:3rem 0 4rem;
 }
+
+/* SKILLS */
+
+.skills{
+    overflow: hidden;
+}
+
+.skills .heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.skills-box{
+    background-color: var(--bg-color-2);
+    padding:5rem 6rem;
+    border-radius: 20px;
+    width:100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.skills-wrap img{
+    width:50px;
+    height:50px;
+    margin-right:1rem;
+    margin-bottom:1rem;
+}
