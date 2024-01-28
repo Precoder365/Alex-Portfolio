@@ -8,7 +8,7 @@
     --main-color-dark-1:rgb(255, 55, 88);
     --main-color-2:hsl(var(--hue-2),100%,61%);
     --main-color-dark-2:hsl(var(--hue-2),82%,55%);
-    --bg-color-1: hsl(var(--hue-1),100%,97%);
+    --bg-color-1: hsl(var(--hue-1),100%,95.5%);
     --bg-color-2: #fff;
     --bg-color-3:hsl(var(--hue-1),100%,98%);
     --bg-color-transparent:rgba(255,255,255,0.6);
@@ -704,3 +704,37 @@ textarea.form-input{
     column-gap:1.2rem;
 }
 
+/* FOOTER */
+
+footer{
+    padding:3rem 0 0;
+    color:var(--text-color);
+}
+
+footer .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap:wrap;
+}
+
+footer .social-media{
+    display: flex;
+}
+
+.social-link{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    margin-left:1rem;
+    background-color:var(--bg-color-1);
+    color:var(--text-color);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.social-link:hover{
+    color: var(--main-color-1);
+}
