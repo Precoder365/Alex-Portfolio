@@ -23,6 +23,10 @@
   padding:0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
     background-color: var(--bg-color-1);
@@ -124,12 +128,12 @@ nav.container{
     transition: .3s;
 }
 
-.nav-link:hover{
+.nav-link:hover, .nav-link.active{
     color:var(--heading-color);
     opacity:1;
 }
 
-.nav-link:hover::after{
+.nav-link:hover::after, .nav-link.active::after{
     width: 100%;
     opacity: 0.2;
 }

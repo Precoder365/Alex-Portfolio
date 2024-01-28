@@ -3,7 +3,10 @@ const header = document.querySelector("header");
 const ml_section=document.querySelector(".milestones");
 const ml_counters=document.querySelectorAll(".number span");
 
+const navLinks = document.querySelectorAll(".nav-link");
+
 window.addEventListener("scroll", () => {
+  activeLink();
   header.classList.toggle("scrolled", window.scrollY > 0);
   if(!mlPlayed) mlCounter();
 });
@@ -67,3 +70,23 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+
+// To make navlink active
+function activeLink() {
+  navLinks.forEach((link) => {
+    let section = document.querySelector(link.hash);
+    if (hasReached(section)) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}
+
+function hasReached(section) {
+  if (!section) return false;
+  let top = section.offsetTop;
+  let height = section.offsetHeight;
+  return window.scrollY >= top && window.scrollY < top + height;
+}
+
