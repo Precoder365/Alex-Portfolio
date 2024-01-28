@@ -229,6 +229,10 @@ nav.container{
     letter-spacing: 0.4px;
     text-transform: capitalize;
     transition: all 0.3s ease;
+    outline:none;
+    font-family: inherit;
+    cursor:pointer;
+    border:none;
 }
 
 .btn:hover{
@@ -599,3 +603,58 @@ span.swiper-pagination-bullet-active{
 .mail:hover i{
     margin-left:10px;
 }
+
+.contact-form{
+    margin:2rem 3rem;
+    background-color: var(--bg-color-2);
+    border-radius: 20px;
+    padding:3.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h3{
+    color:var(--heading-color);
+    font: size 1.3rem;
+    font-weight:500;
+    margin-bottom: 1.6rem;
+    line-height:0.9;
+}
+
+.form-input{
+    display: inline-block;
+    padding:0.9rem 1.5rem;
+    background: var(--bg-color-3);
+    border: 2px solid var(--bg-color-3);
+    width:100%;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight:500;
+    color:var(--heading-color);
+    outline:none;
+    transition: all 0.3s ease;
+}
+
+.form-input::placeholder{
+    color:var(--text-color);
+}
+
+.form-input:hover{
+    filter: brightness(97%);
+}
+
+.form-input:valid, .form-input:focus{
+    filter: brightness(100%);
+    border: 0.5px solid var(--main-color-1);
+}
+
+textarea.form-input{
+    resize: none;
+    height: 170px;
+}
+
+.contact-form .form-input{
+    margin-bottom: 1.5rem;
+}
+
