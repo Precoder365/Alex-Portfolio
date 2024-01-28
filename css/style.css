@@ -4,8 +4,8 @@
     --hue-1:257;
     --hue-2:47;
     --bg-color:hsl(var(--hue-1),100%,97%);
-    --main-color-1:hsl(var(--hue-1),100%,60%);
-    --main-color-dark-1:hsl(var(--hue-1),69%,50%);
+    --main-color-1:rgba(254, 84, 112);
+    --main-color-dark-1:rgb(255, 55, 88);
     --main-color-2:hsl(var(--hue-2),100%,61%);
     --main-color-dark-2:hsl(var(--hue-2),82%,55%);
     --bg-color-1: hsl(var(--hue-1),100%,97%);
@@ -312,7 +312,7 @@ nav.container{
     padding:5rem 6rem;
     border-radius: 20px;
     width:100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .skills-wrap img{
@@ -321,3 +321,4 @@ nav.container{
     margin-right:1rem;
     margin-bottom:1rem;
 }
+
