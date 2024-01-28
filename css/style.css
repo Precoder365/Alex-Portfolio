@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
 :root{
-    --hue-1:257;
+    --hue-1:254;
     --hue-2:47;
-    --bg-color:hsl(var(--hue-1),100%,97%);
     --main-color-1:rgba(254, 84, 112);
     --main-color-dark-1:rgb(255, 55, 88);
     --main-color-2:hsl(var(--hue-2),100%,61%);
-    --main-color-dark-2:hsl(var(--hue-2),82%,55%);
-    --bg-color-1: #fff;
-    --bg-color-2: #fff;
-    --bg-color-3:hsl(var(--hue-1),100%,98%);
+    --bg-color: #fff;
+    --bg-color-1:rgba(245, 147, 164, 0.08);
     --bg-color-transparent:rgba(255,255,255,0.6);
-    --heading-color:hsl(var(--hue-1),61%,24%);
+    --heading-color:rgba(74, 21, 29, 0.943);
     --text-color:hsl(var(--hue-1),17%,63%);
     --section-padding:3rem;
 }
@@ -29,7 +26,7 @@ html{
 
 body{
     overflow-x: hidden;
-    background-color: var(--bg-color-1);
+    background-color: var(--bg-color);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -142,7 +139,7 @@ nav.container{
     color:var(--heading-color);
     min-width:40px;
     height:40px;
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -320,7 +317,7 @@ nav.container{
 }
 
 .skills-box{
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-color);
     padding:5rem 6rem;
     border-radius: 20px;
     width:100%;
@@ -385,7 +382,7 @@ nav.container{
  }
 
  .srv-card{
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-color);
     border-radius: 15px;
     padding:2.5rem 2.1rem;
     display: flex;
@@ -433,13 +430,13 @@ nav.container{
     opacity:0.1;
 }
 
-.services .btn{
+.services .cta .btn{
     margin-top:2rem;
     font-size:1.1rem;
     transition: all 0.3s ease-in-out;
 }
 
-.services .btn:hover{
+.services .cta .btn:hover{
     font-size:1.2rem;
 }
 
@@ -467,7 +464,7 @@ nav.container{
 .prt-card{
     border-radius: 15px;
     overflow:hidden;
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-color);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     display: grid;
     grid-template-rows: 1fr auto;
@@ -553,7 +550,7 @@ nav.container{
 
 .swiper{
     width:100%;
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-color);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
@@ -653,12 +650,16 @@ span.swiper-pagination-bullet-active{
 }
 
 .contact-form{
-    margin:2rem 3rem;
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-color);
     border-radius: 20px;
     padding:3.5rem 3rem;
     display: flex;
     flex-direction: column;
+}
+
+.contact-form-header{
+    font-size: 1.5rem;
+    margin-left:-1rem;
 }
 
 .contact-form h3{
@@ -672,8 +673,8 @@ span.swiper-pagination-bullet-active{
 .form-input{
     display: inline-block;
     padding:0.9rem 1.5rem;
-    background: var(--bg-color-3);
-    border: 2px solid var(--bg-color-3);
+    background: var(--bg-color-1);
+    border: 2px solid var(--bg-color-1);
     width:100%;
     border-radius: 10px;
     font-family: inherit;
@@ -721,7 +722,7 @@ textarea.form-input{
 }
 
 .sub-box{
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-color);
     border-radius: 15px;
     padding:3.5rem 3rem;
     width:100%;
@@ -766,7 +767,7 @@ footer .social-media{
     height:35px;
     border-radius:50%;
     margin-left:1rem;
-    background-color:var(--bg-color-1);
+    background-color:var(--bg-color);
     color:var(--text-color);
     display: flex;
     align-items:center;
