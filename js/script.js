@@ -5,6 +5,8 @@ const ml_counters=document.querySelectorAll(".number span");
 
 const navLinks = document.querySelectorAll(".nav-link");
 
+const hamburger = document.querySelector(".hamburger");
+
 window.addEventListener("scroll", () => {
   activeLink();
   header.classList.toggle("scrolled", window.scrollY > 0);
@@ -88,3 +90,15 @@ function activeLink(){
   navLinks[currentSectionID].classList.add("active");
 
 }
+
+// Hamburger
+
+hamburger.addEventListener("click",()=>{
+ document.body.classList.toggle("open");
+ document.body.classList.toggle("stopScrolling");
+});
+
+navLinks.forEach(link=>link.addEventListener("click",()=>{
+  document.body.classList.remove("open");
+  document.body.classList.remove("stopScrolling");
+}));
