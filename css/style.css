@@ -433,6 +433,16 @@ nav.container{
     opacity:0.1;
 }
 
+.services .btn{
+    margin-top:2rem;
+    font-size:1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.services .btn:hover{
+    font-size:1.2rem;
+}
+
 /* PORTFOLIO */
 
 .portfolio .heading{
@@ -488,6 +498,20 @@ nav.container{
     color:var(--heading-color);
     font-weight:400;
     text-transform: capitalize;
+}
+
+.portfolio-btn{
+    margin-top:2rem;
+    text-align: center;
+}
+
+.portfolio-btn .btn{
+    font-size:1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-btn .btn:hover{
+    font-size:1.2rem;
 }
 
 /* TESTIMONIALS */

@@ -72,21 +72,19 @@ const swiper = new Swiper('.swiper', {
 });
 
 // To make navlink active
-function activeLink() {
-  navLinks.forEach((link) => {
-    let section = document.querySelector(link.hash);
-    if (hasReached(section)) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-    }
-  });
-}
 
-function hasReached(section) {
-  if (!section) return false;
-  let top = section.offsetTop;
-  let height = section.offsetHeight;
-  return window.scrollY >= top && window.scrollY < top + height;
-}
+function activeLink(){
+  let sections=document.querySelectorAll("section[id");
+  let passedSections=Array.from(sections).map((sct,i)=>{
+    return {
+      y: sct.getBoundingClientRect().top-header.offsetHeight,
+      id:i,
+    };
+  }).filter(sct=>sct.y<=0);
 
+  let currentSectionID=passedSections.at(-1).id;
+
+  navLinks.forEach(l=>l.classList.remove("active"));
+  navLinks[currentSectionID].classList.add("active");
+
+}
