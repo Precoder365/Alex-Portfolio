@@ -51,3 +51,19 @@ function mlCounter() {
     },400);
   });
 }
+
+// Carousel
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  speed: 500,
+  autoplay: {
+    delay: 5000,
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+});

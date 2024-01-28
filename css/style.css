@@ -490,16 +490,38 @@ nav.container{
     margin-top:3rem;
 }
 
-.reviews{
-    width:60%;
-    /* height:400px; */
-    background-color: var(--bg-color-2);
-    border-radius: 15px;
-    padding: 2rem 0 2.5rem;
+.swiper-pagination{
+    position:static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:11px;
+    margin-bottom:1rem !important;
 }
 
-.rvw{
-    padding:0 2.5rem;
+.swiper{
+    width:100%;
+    background-color: var(--bg-color-2);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+span.swiper-pagination-bullet{
+    background-color: var(--main-color-1);
+    opacity: 0.3;
+    width:7px;
+    height:7px;
+    cursor:pointer;
+}
+
+span.swiper-pagination-bullet-active{
+    opacity: 1;
+    width:10px;
+    height:10px;
+}
+
+.swiper-slide{
+    padding:2rem 2.5rem;
 }
 
 .client{
@@ -531,7 +553,7 @@ nav.container{
     color: var(--main-color-1);
 }
 
-.rvw .text{
-    margin: 1.5rem 0;
+.swiper-slide .text{
+    margin: 1.5rem 0 3rem;
     display: block;
 }
