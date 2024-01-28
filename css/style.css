@@ -477,22 +477,31 @@ nav.container{
 
 /* TESTIMONIALS */
 
-/* .testimonials{
-    background-color: var(--main-color-1);
-} */
+.testimonials{
+   overflow: hidden;
+   background-color: var(--main-color-1);
+}
 
 .testimonials .heading{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
+    color:#fff;
+}
+
+.testimonials .sub-heading{
+    color:#fff;
+    font-size:0.9rem;
+    margin-bottom: 1.5rem;
 }
 
 .testimonials .container{
     display: grid;
+    grid-template-columns: 1fr 2fr;
     row-gap: 4rem;
     column-gap: 6rem;
-    align-items: center;
     margin-top:3rem;
 }
+
 
 .swiper-pagination{
     position:static;
@@ -656,5 +665,42 @@ textarea.form-input{
 
 .contact-form .form-input{
     margin-bottom: 1.5rem;
+}
+
+/* NEWSLETTER */
+
+.subscription{
+    overflow:hidden;
+    /* background-color: var(--main-color-1); */
+    padding: 3rem 0;
+}
+
+.subscription .heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    
+}
+
+.sub-box{
+    background-color: var(--bg-color-2);
+    border-radius: 15px;
+    padding:3.5rem 3rem;
+    width:100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:6rem;
+    align-items: center;
+}
+
+.sub-box .heading{
+    font-size:2rem;
+    margin-top:2rem;
+}
+
+.sub-box form{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap:1.2rem;
 }
 
