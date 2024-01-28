@@ -751,11 +751,20 @@ footer{
     color:var(--text-color);
 }
 
+footer .logo img{
+    margin-right:0;
+    height: 100px;
+    width: 100px;
+    transition: all 0.3s ease;
+}
+
 footer .container{
    display: flex;
    align-items: center;
    justify-content: space-between;
    flex-wrap:wrap;
+   text-align: center;
+   margin: 0 auto !important;
 }
 
 footer .social-media{
