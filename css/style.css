@@ -557,3 +557,45 @@ span.swiper-pagination-bullet-active{
     margin: 1.5rem 0 3rem;
     display: block;
 }
+
+/* CONTACT */
+
+.contact .heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.contact .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:calc(100vh - 120px);
+    max-height: 2600px;
+    align-items: center;
+    column-gap:4rem;
+}
+
+.contact .container img{
+    width:98%;
+}
+
+.mail{
+    color:var(--main-color-1);
+    font-weight:500;
+    font-size:1.1rem;
+    transition: 0.3s;
+}
+
+.mail i{
+    display: inline-block;
+    font-size: 1rem;
+    margin-left:5px;
+    transition: 0.3s margin-left;
+}
+
+.mail:hover{
+    color:var(00main-color-dark-1);
+}
+
+.mail:hover i{
+    margin-left:10px;
+}
