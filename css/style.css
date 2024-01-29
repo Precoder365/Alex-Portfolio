@@ -69,7 +69,7 @@ header.scrolled{
 }
 
 .logo img{
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
     height: 100px;
     width: 100px;
     transition: all 0.3s ease;
@@ -830,7 +830,7 @@ footer .social-media{
 
 /* Responsiveness */
 
-@media (max-width:1000px){
+@media (max-width:1024px){
     .sub-heading{
         font-size: 0.75rem;
     }
@@ -874,7 +874,7 @@ footer .social-media{
         font-size: 0.7rem;
     }
 
-    .showcase-area{
+    .showcase-area, .contact{
         padding:100px 0;
     }
 
@@ -883,16 +883,18 @@ footer .social-media{
         height:450px;
     }
 
+    .contact .container{
+        grid-template-columns: 1fr 1fr;
+        margin:2rem 1rem;
+        height:100%;
+    }
+
     .services .container{
         column-gap: 2.5rem;
     }
 
-    .contact .container{
-        column-gap: 2.5rem;
-    }
-
     .contact-form{
-        padding: 3.5rem 3rem;
+        padding: 1.5rem 1rem;
     }
 
     .contact-for h3{
@@ -908,6 +910,7 @@ footer .social-media{
         padding: 3.5rem 2.5rem;
         column-gap:2rem;
     }
+
 }
 
 @media (max-width:768px){
@@ -936,6 +939,7 @@ footer .social-media{
 
     header nav{
         justify-content: space-between;
+        background-color: var(--bg-color);
     }
 
     .links ul{
@@ -1141,9 +1145,19 @@ footer .social-media{
     .sub-box .heading{
         margin-top:0rem;
     }
+
+    .showcase-area{
+        margin-left:0;
+    }
+
+    .contact .container{
+        grid-template-columns: 1fr 1fr;
+        margin:2rem 1rem;
+        height:100%;
+    }
 }
 
-@media(max-width:500px){
+@media(max-width:540px){
     .container{
         padding:0 1rem;
     }
@@ -1176,12 +1190,6 @@ footer .social-media{
         justify-content: center;
     }
 
-    .portfolio-title{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .subscription form{
         grid-template-columns: 1fr;
         row-gap:10px;
@@ -1208,6 +1216,23 @@ footer .social-media{
 
     .skills-box{
         padding:2.5rem 2rem;
+    }
+
+    .showcase-area{
+        margin-left:0;
+    }
+
+    .services{
+        padding:0;
+    }
+
+    .contact .container{
+        grid-template-columns: 1fr;
+        margin:2rem 0.5rem;
+    }
+
+    .contact-form .container{
+        padding:0;
     }
 
 }
